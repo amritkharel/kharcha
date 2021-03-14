@@ -7,4 +7,4 @@ def home(request):
         'Item': Item.objects.all(),
         'Budget': Budget.objects.all()
     }
-    return render(request, 'home.html', context)
+    return render(request, 'expenses/home.html', context)
